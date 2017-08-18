@@ -68,4 +68,3 @@ gem 'devise'
 
 gem 'pundit'
 
-gem 'rolify'

@@ -1,0 +1,2 @@
+module Chef::MenusHelper
+end
