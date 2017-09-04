@@ -6,12 +6,10 @@ class Users::SessionsController < Devise::SessionsController
   #   super
   # end
 
-  POST /resource/sign_in
-  def create
-    rtn = super
-    sign_in(resource.type.underscore, resource.type.constantize.send(:find, resource.id)) unless resource.type.nil?
-    rtn
-  end
+  # POST /resource/sign_in
+  # def create
+  #  super
+  # end
 
   # DELETE /resource/sign_out
   # def destroy
