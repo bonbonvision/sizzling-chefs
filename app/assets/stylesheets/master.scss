@@ -12,14 +12,44 @@ h2 {
 }
 
 
+/*Reset margins*/
+
+h1, h2, h3, h4, h5, h6, .navbar {
+  margin: 0;
+}
+
+
 /*Navagation*/
 
 .navbar {
   font-family: 'proxima_nova_cn_ltlight';
-  
+  box-shadow: 1px 1px 2px 0 #2a2a2a;
 }
 
 /*maybe .navbar-inverse a.navbar-brand */
 .navbar-inverse .navbar-brand {
      
+}
+
+/*Homepage*/
+
+.hero {
+  background: image_url('hero.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 450px;
+  box-shadow: 1px 1px 2px 0 #2a2a2a;
+}
+
+/*Button styles*/
+
+.btn-primary {
+  background-color: transparent;
+  border-style: solid;
+  border-color: #000;
+  color: #000;
+  font-size: 18px;
+  border-radius: 0;
 }
