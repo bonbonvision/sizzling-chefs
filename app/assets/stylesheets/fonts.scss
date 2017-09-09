@@ -44,9 +44,9 @@ src: local('Omnes Semibold'), font_url('omnes-semibold-webfont.woff') format('wo
 
 
 @font-face {
-    font-family: 'proxima_nova_condensedregular';
-    src: font_url('proxima_nova_condensed_regular-webfont.woff2') format('woff2'),
-         font_url('proxima_nova_condensed_regular-webfont.woff') format('woff');
+    font-family: 'proxima_nova_rgregular';
+    src: font_url('proxima_nova_regular-webfont.woff2') format('woff2'),
+         font_url('proxima_nova_regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -56,13 +56,14 @@ src: local('Omnes Semibold'), font_url('omnes-semibold-webfont.woff') format('wo
 
 
 @font-face {
-    font-family: 'proxima_nova_cn_ltlight';
-    src: font_url('proxima_nova_condensed_light-webfont.woff2') format('woff2'),
-         font_url('proxima_nova_condensed_light-webfont.woff') format('woff');
+    font-family: 'proxima_nova_ltlight';
+    src: font_url('proxima_nova_light-webfont.woff2') format('woff2'),
+         font_url('proxima_nova_light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
+
 
 
 
