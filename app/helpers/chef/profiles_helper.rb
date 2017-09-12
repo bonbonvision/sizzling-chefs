@@ -1,0 +1,2 @@
+module Chef::ProfilesHelper
+end

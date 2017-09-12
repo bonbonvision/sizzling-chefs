@@ -1,0 +1,15 @@
+  <h1>Create your profile</h1>
+  <%= simple_form_for @profile, url: chef_profiles_path do |f| %>
+    <%= f.input :subtitle %>
+    <%= f.input :bio %>
+    <%= f.input :city %>
+    <%= f.input :state %>
+    <%= f.input :favorite_dish %>
+    <%= f.input :inspiration %>
+    <br />
+    <%= f.submit "Create", class: 'btn btn-primary' %>
+    <br />
+  <% end %>
+
+
+ 
