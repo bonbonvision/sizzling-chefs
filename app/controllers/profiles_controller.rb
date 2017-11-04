@@ -1,8 +1,10 @@
 class ProfilesController < ApplicationController
-  before_action :authenticate_chef!
+  before_action :authenticate_user!
+  # before_action :authorize_chef!
 
   def new
     @profile = Profile.new
+    @chef = Chef(:id)
   end
 
   def create
@@ -19,5 +21,12 @@ class ProfilesController < ApplicationController
   def profile_params
     params.require(:profile).permit(:subtitle, :bio, :city, :state, :favorite_dish, :inspiration)
   end
+
+  # def authorize_chef!
+  #   if ! current_user.chef?
+  #     render_not_found
+  #   end
+  # end
+
 
 end
