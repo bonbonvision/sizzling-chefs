@@ -4,8 +4,4 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  def chef?
-    self.user_type == 'chef'
-  end
-  
 end
