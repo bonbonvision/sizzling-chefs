@@ -22,8 +22,7 @@ class ProfilesController < ApplicationController
   end
 
   def find_chef?
-    @chef = Chef.find(params[:id])
+    @chef = Chef.find params[:chef_id]
   end
-
 
 end
