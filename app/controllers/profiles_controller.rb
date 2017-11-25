@@ -18,7 +18,7 @@ class ProfilesController < ApplicationController
   private
 
   def profile_params
-    params.require(:profile).permit(:subtitle, :bio, :city, :state, :favorite_dish, :inspiration)
+    params.require(:profile).permit(:subtitle, :bio, :city, :state, :favorite_dish, :inspiration, :image)
   end
 
   def find_chef?
