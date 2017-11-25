@@ -10,4 +10,13 @@
       <%= link_to 'Action Button', '#', class: 'btn btn-primary' %>
     </div>
   </div>
+
+  <ul>
+    <% Chef.all.each do |chef| %>
+      <li>
+        <%= link_to chef.name, '#' %>
+      </li>
+    <% end %>
+  </ul>
+
 </div>
