@@ -1,22 +1,24 @@
-<div class="hero">
-  <div class="container">
-    <div class="col-12 align-left">
-      <br>
-      <br>
-      <h1>This text will make you hungry</h1>
-      <br>
-      <h2>So you will want to click the button under me</h2>
-      <br>
-      <%= link_to 'Action Button', '#', class: 'btn btn-primary' %>
+<section class="hp-header">
+  <div class="hero-container">
+    <div class="hero">
+      <div class="hero-content">
+        <h1 span class="headline1">This text will make you hungry</span>
+        <br>
+        <h2 span class="headline2">So you will want to click the button under me</span>
+        <br>
+        <%= link_to 'Action Button', '#', class: 'btn btn-primary hp-button' %>
+      </div>
     </div>
   </div>
+</section>
 
-  <ul>
+<section class="hp-content">
+  <div class="hp-chef-index">
     <% Chef.all.each do |chef| %>
-      <li>
+      <h3>
+<!--         <%= @chef.image %> -->
         <%= link_to chef.name, '#' %>
-      </li>
+      </h3>
     <% end %>
-  </ul>
-
-</div>
+  </div>
+</section>

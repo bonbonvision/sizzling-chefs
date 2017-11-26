@@ -1,2 +1,20 @@
-<h1 class="text-center"><%= @profile.subtitle %></h1>
-<%= image_tag @profile.image, class: 'img-fluid' %>
+<section class="chef-profile">
+  <section class="chef-header">
+    <div class="chef-profile-background">
+      <div class="chef-image">
+        <%= image_tag @profile.image, class: 'img-fluid' %>
+      </div>
+      <div class="chef-title">
+        <h1 class="chef-name"><%= @chef.name %></h1>
+        <h2 class="chef-subtitle"><%= @profile.subtitle %></h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="chef-body">
+    <div class="chef-body-content">
+      <h3>Bio</h3>
+      <p class="bio-text"><%= @profile.bio %></p>
+    </div>
+  </section>
+</section>
