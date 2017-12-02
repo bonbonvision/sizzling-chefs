@@ -24,12 +24,48 @@ h1, h2, h3, h4, h5, h6, .navbar {
 .navbar {
   font-family: 'proxima_nova_ltlight';
   box-shadow: 1px 1px 2px 0 #2a2a2a;
+  overflow: hidden;
+  background: black;
 }
 
-/*maybe .navbar-inverse a.navbar-brand */
-.navbar-inverse .navbar-brand {
-     
+/*.navbar a {
+  float: left;
 }
+*/
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  max-width: 185px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+
+/* Links inside the dropdown */
+.dropdown-menu a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-menu a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
 
 /*Homepage*/
 
