@@ -9,3 +9,5 @@ class User < ApplicationRecord
   end
 
 end
+
+# You need to add validations 
